@@ -5,7 +5,7 @@
 %define __os_install_post %{nil}
 
 Name:           elasticsearch-plugin-cloud-aws
-Version:        1.3.0
+Version:        1.4.0
 Release:        1%{?dist}
 Summary:        ElasticSearch plugin to use EC2 and S3
 
@@ -17,7 +17,7 @@ Source0:        https://github.com/downloads/elasticsearch/elasticsearch-cloud-a
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch:      noarch
 
-Requires:       elasticsearch >= 0.19
+Requires:       elasticsearch >= 0.20
 
 %description
 The AWS Cloud plugin allows to use AWS EC2 API for the
