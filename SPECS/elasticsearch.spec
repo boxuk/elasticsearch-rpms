@@ -2,8 +2,8 @@
 %define base_install_dir %{_javadir}{%name}
 
 Name:           elasticsearch
-Version:        0.20.4
-Release:        2%{?dist}
+Version:        0.20.5
+Release:        1%{?dist}
 Summary:        A distributed, highly available, RESTful search engine
 
 Group:          System Environment/Daemons
@@ -118,8 +118,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
-* Sat Mar 23 2013 matt.willsher@boxuk.net 0.20.4-2
+* Sat Mar 23 2013 matt.willsher@boxuk.net 0.20.5-1
 - Require java >= 1.6.0
+- New upstream 0.20.5
 
 * Sun Mar 11 2012 matt.willsher@boxuk.net 1.19.11-1
 - New Upstream version
