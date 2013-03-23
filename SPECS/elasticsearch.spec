@@ -3,7 +3,7 @@
 
 Name:           elasticsearch
 Version:        0.20.4
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        A distributed, highly available, RESTful search engine
 
 Group:          System Environment/Daemons
@@ -18,7 +18,7 @@ Source4:        sysconfig-elasticsearch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 Requires:       jpackage-utils
-Requires:       java
+Requires:       java >= 1.6.0
 
 Requires(post): chkconfig initscripts
 Requires(pre):  chkconfig initscripts
@@ -118,6 +118,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Sat Mar 23 2013 matt.willsher@boxuk.net 0.20.4-2
+- Require java >= 1.6.0
+
 * Sun Mar 11 2012 matt.willsher@boxuk.net 1.19.11-1
 - New Upstream version
 
